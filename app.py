@@ -5,6 +5,22 @@ import charts as ch
 
 # Page Layout Configuration
 st.set_page_config(page_title="Luxury Titanic Dashboard", layout="wide")
+# Force Dark Theme and Yellow/Orange text colors via CSS
+st.markdown("""
+<style>
+    .stApp {
+        background-color: #0d0202 !important;
+    }
+    h1, h2, h3, p, span, div, label {
+        color: #ffcc00 !important;
+        font-family: 'sans serif' !important;
+    }
+    .stSelectbox div[data-baseweb="select"] {
+        background-color: #1f0c0c !important;
+        color: #ffcc00 !important;
+    }
+</style>
+""", unsafe_allow_html=True)
 st.markdown('<style>div[block-container] { background-color: #0e1117; }</style>', unsafe_allow_html=True)
 
 # Custom CSS to inject the Red-Brown Header Ribbon, Sidebar, and Text alignment
