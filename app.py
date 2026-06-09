@@ -185,3 +185,20 @@ with row5_col1:
     st.pyplot(ch.draw_sibsp_count(filtered_df))
 with row5_col2:
     st.pyplot(ch.draw_parch_count(filtered_df))
+ # Force original local dark theme layout & colors
+st.markdown("""
+<style>
+    .stApp {
+        background-color: #0d0202 !important;
+    }
+    h1, h2, h3, p, span, div, label, .stMarkdown {
+        color: #ffcc00 !important;
+    }
+    section[data-testid="stSidebar"] {
+        background-color: #1f0c0c !important;
+    }
+    section[data-testid="stSidebar"] .stMarkdown, section[data-testid="stSidebar"] label {
+        color: #ffcc00 !important;
+    }
+</style>
+""", unsafe_allow_html=True)   
