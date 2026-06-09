@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# گراف کا بیک گراؤنڈ کالا اور ٹیکسٹ پیلا کرنے کے لیے
 plt.style.use('dark_background')
 sns.set_theme(style="darkgrid", rc={
     "axes.facecolor": "#0d0202", 
