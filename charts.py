@@ -1,6 +1,17 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# گراف کا بیک گراؤنڈ کالا اور ٹیکسٹ پیلا کرنے کے لیے
+plt.style.use('dark_background')
+sns.set_theme(style="darkgrid", rc={
+    "axes.facecolor": "#0d0202", 
+    "figure.facecolor": "#0d0202",
+    "text.color": "#ffcc00",
+    "axes.labelcolor": "#ffcc00",
+    "xtick.color": "#ffcc00",
+    "ytick.color": "#ffcc00"
+})
+
 # Global styling to perfectly sync with Streamlit's dark mode theme
 def apply_chart_style(fig, ax, title, xlabel="", ylabel=""):
     # Using Streamlit's exact dark background color so charts blend seamlessly
