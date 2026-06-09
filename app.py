@@ -109,7 +109,7 @@ st.markdown("<h1>🚢 Titanic Executive Analytics Dashboard</h1>", unsafe_allow_
 st.write("An immersive data analysis application mapping passenger dynamics, pricing tier layouts, and historical survival distributions.")
 
 # Load Dataset
-df = pd.read_csv('data/titanic.csv')
+df = pd.read_csv('titanic.csv')
 
 # Sidebar Panel Configuration
 st.sidebar.markdown("<h3 style='color:#56cfe1; border:none; margin:0; font-weight:800;'>Global Filters</h3>", unsafe_allow_html=True)
