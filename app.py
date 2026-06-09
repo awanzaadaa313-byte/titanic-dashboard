@@ -5,6 +5,7 @@ import charts as ch
 
 # Page Layout Configuration
 st.set_page_config(page_title="Luxury Titanic Dashboard", layout="wide")
+st.markdown('<style>div[block-container] { background-color: #0e1117; }</style>', unsafe_allow_html=True)
 
 # Custom CSS to inject the Red-Brown Header Ribbon, Sidebar, and Text alignment
 st.markdown("""
